@@ -21,7 +21,9 @@ using (HttpClient client = new HttpClient())
             {
                 // Read the JSON content as a string
                 string jsonContent = await response.Content.ReadAsStringAsync();
-
+                
+                //var users = JsonSerializer.Deserialize<root>(jsonContent);
+                
                 // Process the JSON data as needed
                 // For example, you can deserialize it into objects using Newtonsoft.Json:
                 // var data = JsonConvert.DeserializeObject<MyDataClass>(jsonContent);
