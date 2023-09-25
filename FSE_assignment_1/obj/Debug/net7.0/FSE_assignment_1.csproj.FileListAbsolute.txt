@@ -1,0 +1,14 @@
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\bin\Debug\net7.0\FSE_assignment_1.exe
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\bin\Debug\net7.0\FSE_assignment_1.deps.json
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\bin\Debug\net7.0\FSE_assignment_1.runtimeconfig.json
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\bin\Debug\net7.0\FSE_assignment_1.dll
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\bin\Debug\net7.0\FSE_assignment_1.pdb
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.AssemblyInfoInputs.cache
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.AssemblyInfo.cs
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.csproj.CoreCompileInputs.cache
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.dll
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\refint\FSE_assignment_1.dll
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.pdb
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\FSE_assignment_1.genruntimeconfig.cache
+C:\Users\Gamer\Documents\gamer directories\FSE_assignment_1\FSE_assignment_1\obj\Debug\net7.0\ref\FSE_assignment_1.dll

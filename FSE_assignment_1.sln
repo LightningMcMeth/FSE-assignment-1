@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSE-assignment-1", "FSE-assignment-1\FSE-assignment-1.csproj", "{86840C12-B939-4123-BEF7-2B1FFC6ABA0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSE_assignment_1", "FSE_assignment_1\FSE_assignment_1.csproj", "{86840C12-B939-4123-BEF7-2B1FFC6ABA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
