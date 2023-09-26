@@ -20,13 +20,28 @@ using (HttpClient client = new HttpClient())
             {
                 
                 string jsonContent = await response.Content.ReadAsStringAsync();
+                
+                var root = JsonSerializer.Deserialize<root>(jsonContent);
 
-                var users = JsonSerializer.Deserialize<json_data>(jsonContent);
+                //var gamer = root.data[1].nickname;
+
+                foreach (var user in root.data)
+                {
+                    //we only go in here if the user is not online
+                    if (!user.isOnline)
+                    {
+                        
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{user.nickname} is online");
+                    }
+                }
 
             }
             else
             {
-                Console.WriteLine($"Failed to retrieve JSON file. Status code: {response.StatusCode}");
+                Console.WriteLine($"Failed to retrieve JSON file. Cringe. Status code: {response.StatusCode}");
             }
         }
     }
@@ -38,13 +53,13 @@ using (HttpClient client = new HttpClient())
 
 public class json_data
 {
-    public string userId { get; }
-    public string nickname { get; }
-    public string firstName { get; }
-    public string lastName { get; }
-    public string registrationDate { get; }
-    public string lastSeenDate { get; }
-    public bool isOnline { get; }
+    public string userId { get; set; }
+    public string nickname { get; set; }
+    public string firstName { get; set; }
+    public string lastName { get; set; }
+    public string registrationDate { get; set; }
+    public string lastSeenDate { get; set; }
+    public bool isOnline { get; set; }
 }
 
 public class root
@@ -52,6 +67,3 @@ public class root
     public int total { get; set; }
     public List<json_data> data { get; set; }
 }
-
-//Console.WriteLine("JSON data retrieved successfully:");
-//Console.WriteLine(jsonContent);
