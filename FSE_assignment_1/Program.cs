@@ -30,6 +30,8 @@ using (HttpClient client = new HttpClient())
                     //we only go in here if the user is not online
                     if (!user.isOnline)
                     {
+                        DateTime lastSeenDate = DateTime.Parse(user.lastSeenDate);
+                        
                         
                     }
                     else
