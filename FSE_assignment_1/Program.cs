@@ -1,8 +1,10 @@
-﻿using System;
-using System.Net.Http;
-using System.Runtime.InteropServices.JavaScript;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 using System.Text.Json;
+
+namespace MyNamespace
+{
+    
+}
 
 string jsonUrl = "https://sef.podkolzin.consulting/api/users/lastSeen?offset=";
 
@@ -12,12 +14,9 @@ using (HttpClient client = new HttpClient())
     {
         Console.WriteLine($"Current time: {DateTime.UtcNow}");
 
-        //TimeZoneInfo KyivTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Europe/Kiev");     //I hate that Kyiv has to be spelt incorrectly
-        //DateTime currentKyivTime = TimeZoneInfo.ConvertTime(DateTime.UtcNow, KyivTimeZone);
-        
         for (int i = 0; i <= 200; i += 20)
         {
-            string jsonUrlOffest = jsonUrl + i.ToString();
+            string jsonUrlOffest = offsetURL(i, jsonUrl);
             
             HttpResponseMessage response = await client.GetAsync(jsonUrlOffest);
             
@@ -30,53 +29,8 @@ using (HttpClient client = new HttpClient())
 
                 foreach (var user in root.data)
                 {
-                    //we only go in here if the user is not online
-                    if (!user.isOnline)
-                    {
-                        DateTime lastSeenDate = DateTime.Parse(user.lastSeenDate);
-                        DateTime startOfDay = DateTime.UtcNow.Date;
-
-                        TimeSpan startOfDayDT = lastSeenDate - startOfDay;
-                        TimeSpan timeDifference = DateTime.UtcNow - lastSeenDate;
-
-                        if (timeDifference <= TimeSpan.FromSeconds(30))
-                        {
-                            Console.WriteLine($"{user.nickname} was online just now");
-                        }
-                        else if (timeDifference <= TimeSpan.FromMinutes(1))
-                        {
-                            Console.WriteLine($"{user.nickname} was online less than a minute ago");
-                        }
-                        else if (timeDifference <= TimeSpan.FromHours(1))
-                        {
-                            Console.WriteLine($"{user.nickname} was online a couple of minutes ago");
-                        }
-                        else if (timeDifference <= TimeSpan.FromHours(2))
-                        {
-                            Console.WriteLine($"{user.nickname} was online an hour ago");
-                        }
-                        else if (timeDifference <= TimeSpan.FromHours(2) && timeDifference <= startOfDayDT)
-                        {
-                            Console.WriteLine($"{user.nickname} was online today");
-                        }
-                        else if (timeDifference >= TimeSpan.FromHours(2) && timeDifference >= startOfDayDT)
-                        {
-                            Console.WriteLine($"{user.nickname} was online just now");
-                        }
-                        else if (timeDifference <= TimeSpan.FromDays(7))
-                        {
-                            Console.WriteLine($"{user.nickname} was online this week");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"{user.nickname} was online a long time ago");
-                        }
-                        
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{user.nickname} is online");
-                    }
+                    string userOnlineStatus = calculateLastSeenOnline(user);
+                    Console.WriteLine(userOnlineStatus);
                 }
 
             }
@@ -89,6 +43,67 @@ using (HttpClient client = new HttpClient())
     catch (Exception ex)
     {
         Console.WriteLine($"Uh oh, error: {ex.Message}");
+    }
+}
+
+
+string offsetURL(int offset, string url)
+{
+    return url + offset;
+}
+
+string calculateLastSeenOnline(json_data user)
+{
+    if (!user.isOnline)
+    {
+        //DateTime lastSeenDate = DateTime.ParseExact(user.lastSeenDate, "yyyy-MM-ddTHH:mm:ss.fffffffzzz",
+        //CultureInfo.InvariantCulture, DateTimeStyles.None);
+        DateTime lastSeenDate = DateTime.Parse(user.lastSeenDate, CultureInfo.InvariantCulture, DateTimeStyles.AssumeUniversal);
+        lastSeenDate = lastSeenDate.ToUniversalTime();
+        
+        DateTime startOfDay = DateTime.UtcNow.Date;
+
+        TimeSpan startOfDayDT = lastSeenDate - startOfDay;
+        TimeSpan timeDifference = DateTime.UtcNow - lastSeenDate;
+
+        if (timeDifference <= TimeSpan.FromSeconds(30))
+        {
+            return user.nickname + " was online just now";
+        }
+        else if (timeDifference <= TimeSpan.FromMinutes(1))
+        {
+            return user.nickname + " was online less than a minute ago";
+        }
+        else if (timeDifference <= TimeSpan.FromHours(1))
+        {
+            return user.nickname + " was online a couple of minutes ago";
+        }
+        else if (timeDifference <= TimeSpan.FromHours(2))
+        {
+            return user.nickname + " was online an hour ago";
+        }
+        else if (timeDifference <= TimeSpan.FromHours(2) && timeDifference <= startOfDayDT)
+        {
+            return user.nickname + " was online today";
+        }
+        else if (timeDifference >= TimeSpan.FromHours(2) && timeDifference >= startOfDayDT)
+        {
+            return user.nickname + " was online just now";
+        }
+        else if (timeDifference <= TimeSpan.FromDays(7))
+        {
+            return user.nickname + " was online this week";
+        }
+        else
+        {
+            return user.nickname + " was online a long time ago";
+        }
+
+    }
+    else
+    {
+        Console.WriteLine($"{user.nickname} is online");
+        return user.nickname + "is online";
     }
 }
 
