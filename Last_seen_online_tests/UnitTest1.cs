@@ -26,11 +26,11 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-28T17:00:00.4068456+00:00",
             isOnline = true,
         };
         //don't really need DateTime here, but I need to pass some value into the function, even if it's not used
-        string datetimeStr = "2023-09-28T17:16:38.3367009+00:00";
+        string datetimeStr = "2023-09-28T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 is online";
@@ -51,10 +51,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-29T16:59:45.4068456+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-28T17:16:38.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online just now";
@@ -74,10 +74,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-29T16:59:15.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-28T17:17:02.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online less than a minute ago";
@@ -97,10 +97,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-29T16:45:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-28T17:20:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online a couple of minutes ago";
@@ -120,10 +120,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-29T15:45:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-28T18:17:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online an hour ago";
@@ -143,10 +143,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-29T13:00:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-28T20:16:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online today";
@@ -166,10 +166,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-28T17:00:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-27T17:16:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online yesterday";
@@ -189,10 +189,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-09-24T17:00:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-09-23T17:16:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online this week";
@@ -212,10 +212,10 @@ public class lastSeenOnlineTests
             firstName = "Emmett",
             lastName = "Block",
             registrationDate = "2023-06-08T21:50:41.1053254+00:00",
-            lastSeenDate = "2023-09-28T17:16:28.4068456+00:00",
+            lastSeenDate = "2023-8-29T17:00:00.3367009+00:00",
             isOnline = false,
         };
-        string datetimeStr = "2023-08-28T17:16:28.3367009+00:00";
+        string datetimeStr = "2023-09-29T17:00:00.3367009+00:00";
         DateTime datetimeComparison = DateTime.Parse(datetimeStr);
         datetimeComparison = datetimeComparison.ToUniversalTime();
         string expectedStatus = "Emmett82 was online a long time ago";

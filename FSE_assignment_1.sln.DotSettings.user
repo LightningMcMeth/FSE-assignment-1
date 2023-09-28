@@ -31,7 +31,6 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed101dbb_002D1492_002D48fe_002Db21b_002D3b137ab976c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="offset_IsJoinedWithValidValue_true #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests.offset_IsJoinedWithValidValue_true&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests.user_isOnline_today&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

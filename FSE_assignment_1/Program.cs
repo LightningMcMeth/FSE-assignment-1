@@ -30,8 +30,10 @@ namespace FSE_assignment_1
 
                             foreach (var user in root.data)
                             {
+                                user.lastSeenDate = "2023-08-28T17:16:28.3367009+00:00";
                                 string userOnlineStatus = calculateLastSeenOnline(user, currentTime);
                                 Console.WriteLine(userOnlineStatus);
+                                break;
                             }
                         }
                         else
@@ -60,35 +62,39 @@ namespace FSE_assignment_1
                 lastSeenDate = lastSeenDate.ToUniversalTime();
 
                 DateTime startOfDay = currentTime.Date;
+                DateTime startOfDayYesterday = startOfDay.AddDays(-1);
+                DateTime startOfDayWeekAgo = startOfDay.AddDays(-7);
 
                 TimeSpan startOfDayDT = lastSeenDate - startOfDay;
+                TimeSpan startOfDayYesterdayDT = lastSeenDate - startOfDayYesterday;
+                TimeSpan startOfDayWeekAgoDT = lastSeenDate - startOfDayWeekAgo;
                 TimeSpan timeDifference = currentTime - lastSeenDate;
 
                 if (timeDifference <= TimeSpan.FromSeconds(30))
                 {
                     return user.nickname + " was online just now";
                 }
-                else if (timeDifference <= TimeSpan.FromMinutes(1))
+                else if (timeDifference >= TimeSpan.FromSeconds(30) && timeDifference <= TimeSpan.FromSeconds(59))
                 {
                     return user.nickname + " was online less than a minute ago";
                 }
-                else if (timeDifference <= TimeSpan.FromHours(1))
+                else if (timeDifference <= TimeSpan.FromMinutes(59) && timeDifference >= TimeSpan.FromMinutes(1))
                 {
                     return user.nickname + " was online a couple of minutes ago";
                 }
-                else if (timeDifference <= TimeSpan.FromHours(2))
+                else if (timeDifference <= TimeSpan.FromMinutes(119) && timeDifference >= TimeSpan.FromMinutes(60))
                 {
                     return user.nickname + " was online an hour ago";
                 }
-                else if (timeDifference <= TimeSpan.FromHours(2) && timeDifference <= startOfDayDT)
+                else if (timeDifference >= TimeSpan.FromHours(2) && timeDifference <= startOfDayDT)
                 {
                     return user.nickname + " was online today";
                 }
-                else if (timeDifference >= TimeSpan.FromHours(2) && timeDifference >= startOfDayDT)
+                else if (timeDifference >= TimeSpan.FromHours(2) && timeDifference >= startOfDayDT && timeDifference <= startOfDayYesterdayDT)
                 {
                     return user.nickname + " was online yesterday";
                 }
-                else if (timeDifference <= TimeSpan.FromDays(7))
+                else if (timeDifference <= startOfDayWeekAgoDT && timeDifference >= startOfDayYesterdayDT)
                 {
                     return user.nickname + " was online this week";
                 }
