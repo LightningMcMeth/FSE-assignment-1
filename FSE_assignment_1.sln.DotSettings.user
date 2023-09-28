@@ -1,0 +1,37 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bc6e9f2_002D3dda_002D475d_002Db862_002D6e0ba1033192/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="lastSeenOnlineTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=97f28832_002D0a73_002D4229_002Db0d5_002D3fcd9ea18a59/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="user_isOnline_true #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::Last_seen_online_tests.lastSeenOnlineTests.user_isOnline_true&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a2b1f790_002D40e8_002D49a8_002Da1fa_002D93d3351a83a1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="offset_IsJoinedWithValidValue_true" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::Last_seen_online_tests.lastSeenOnlineTests.offset_IsJoinedWithValidValue_true&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba6368e2_002D1340_002D4039_002Dab8c_002Dc86d212b8e20/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="lastSeenOnlineTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::Last_seen_online_tests.lastSeenOnlineTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8a2254c_002D9135_002D4fb9_002D80b5_002Da9b2364b0bb9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="user_isOnline_true" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::Last_seen_online_tests.lastSeenOnlineTests.user_isOnline_true&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=daffc55b_002D4630_002D42f3_002D8e56_002Da8ceefcd6b2a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="lastSeenOnlineTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::Last_seen_online_tests.lastSeenOnlineTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed101dbb_002D1492_002D48fe_002Db21b_002D3b137ab976c1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="offset_IsJoinedWithValidValue_true #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests.offset_IsJoinedWithValidValue_true&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::7BADA87F-B9CF-49CF-A567-A84B9D532ACB::net7.0::UnitTest1.lastSeenOnlineTests.user_isOnline_today&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
