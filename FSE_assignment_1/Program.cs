@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace FSE_assignment_1
 {
-    public class lastSeenOnlineProgram
+    public class LastSeenOnlineProgram
     {
         static async Task Main(string[] args)
         {
@@ -62,8 +62,8 @@ namespace FSE_assignment_1
                 lastSeenDate = lastSeenDate.ToUniversalTime();
 
                 DateTime startOfDay = currentTime.Date;
-                DateTime startOfDayYesterday = startOfDay.AddDays(-1);
-                DateTime startOfDayWeekAgo = startOfDay.AddDays(-7);
+                DateTime startOfDayYesterday = startOfDay.Subtract(TimeSpan.FromDays(1));
+                DateTime startOfDayWeekAgo = startOfDay.Subtract(TimeSpan.FromDays(7));
 
                 TimeSpan startOfDayDT = lastSeenDate - startOfDay;
                 TimeSpan startOfDayYesterdayDT = lastSeenDate - startOfDayYesterday;
